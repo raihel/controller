@@ -3,8 +3,6 @@
     "description": "Create your routes using attributes in your controllers",
     "require": {
         "php": "^8.1.0",
-        "laravel/lumen": "^9.0",
-        "slim/slim": "3.*",
         "jerowork/file-class-reflector": "^0.1.0"
     },
     "type": "library",
@@ -18,8 +16,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Raihel\\Controller\\": "src/",
-            "App\\": "app/"
+            "Raihel\\Controller\\": "src/"
         }
     },
     "authors": [

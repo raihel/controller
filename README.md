@@ -35,7 +35,7 @@ use Raihel\Controller\Core\Load\Type\SlimLoadRoute;
 
 ControllerFactory::load(
   loadRoute: new SlimLoadRoute($app),
-  diretory: [__DIR__ . '/../../app/Aluno'],
+  diretory: [__DIR__ . '/../src'],
   controllers: [HelloController::class]
 );
 
@@ -46,8 +46,8 @@ $app->run();
 lumen example: (In test)
 ```
 ControllerFactory::load(
-  loadRoute: new LaravelLoadRoute($router),
-  diretory: [__DIR__ . '../app/Http/Controllers'],
+    loadRoute: new LumenLoadRoute($router),
+    diretory: [__DIR__ . '/../app/Http/Controllers'],
 );
 ```
 ## Usage/Examples

@@ -1,5 +1,9 @@
 # Raihel Controller
 
+[![Total Downloads](https://img.shields.io/packagist/dt/raihel/controller)](https://packagist.org/packages/raihel/controller)
+[![Latest Stable Version](https://img.shields.io/packagist/v/raihel/controller)](https://packagist.org/packages/raihel/controller)
+[![License](https://img.shields.io/packagist/l/raihel/controller)](https://packagist.org/packages/raihel/controller)
+
 Create your routes using attributes in your controllers
 
 
@@ -94,3 +98,7 @@ The attribute `Get` before the home method creates a `GET /home` endponit for ap
 ## Authors
 
 - [@heliodantas](https://github.com/HelioDantas)
+
+## License
+
+The Raihel Controller is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

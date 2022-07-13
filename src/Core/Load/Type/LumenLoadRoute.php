@@ -5,7 +5,7 @@ namespace Raihel\Controller\Core\Load\Type;
 use Raihel\Controller\Core\Load\Route;
 use \Laravel\Lumen\Routing\Router;
 
-class LaravelLoadRoute implements LoadRoute
+class LumenLoadRoute implements LoadRoute
 {
     public function __construct(
         private readonly Router $router
@@ -14,10 +14,12 @@ class LaravelLoadRoute implements LoadRoute
 
     public function load(Route $route) 
     {
+        $controller = explode("\\", $route->getController());
+
         $this->router->addRoute(
             $route->getHttpMethod()->getMethod()->name, 
             $this->pattern($route), 
-            $route->getController() . "@{$route->getMethod()}"
+            array_pop($controller) . "@{$route->getMethod()}"
         );
     }
 

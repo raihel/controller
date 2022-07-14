@@ -18,13 +18,13 @@ Create your routes using attributes in your controllers
 
 Use Controller Factory to map your routes
 
-- `diretory`: An array with the directories of your routes
+- `diretory`: An array with the directories of your controllers
 - `controllers`: An array with your controller classes
 - `loadRoute`: The class that will do the work of including the routes mapped in your controllers in your application accepts any class that implements `Raihel\Controller\Core\Load\Type\LoudRoute`
 
+### Slim:
 
-Slim example: 
-```
+```php
 
 require __DIR__.'/../../vendor/autoload.php';
 
@@ -47,8 +47,9 @@ $app->run();
 
 ```
 
-lumen example: (In test)
-```
+### Lumen:
+
+```php
 ControllerFactory::load(
     loadRoute: new LumenLoadRoute($router),
     diretory: [__DIR__ . '/../app/Http/Controllers'],
@@ -60,6 +61,7 @@ ControllerFactory::load(
 
 Create your controller by adding the
 attribute Controller in your class it can receive a prefix that groups your routes
+
 ```php
 
 namespace App;

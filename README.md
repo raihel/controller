@@ -61,7 +61,6 @@ ControllerFactory::load(
 
 Create your controller by adding the
 attribute Controller in your class it can receive a prefix that groups your routes
-
 ```php
 
 namespace App;
